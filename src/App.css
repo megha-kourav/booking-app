@@ -795,6 +795,8 @@ gap: 10px;
   }
 }
 
+
+
 /* Overlay */
 .dp-overlay {
   position: fixed;
@@ -808,6 +810,74 @@ gap: 10px;
   align-items: center;
   z-index: 999;
   padding: 15px;
+}
+
+/* Overlay background */
+.dp-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+/* Modal box */
+.dp-modal {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Input styling */
+.dp-modal input {
+  padding: 8px 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+  outline: none;
+}
+
+.dp-modal input:focus {
+  border-color: #4a90e2;
+}
+
+/* Buttons */
+.dp-modal button {
+  padding: 8px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: 0.2s ease;
+}
+
+/* Done button */
+.dp-modal button:first-of-type {
+  background-color: #4a90e2;
+  color: white;
+}
+
+.dp-modal button:first-of-type:hover {
+  background-color: #357abd;
+}
+
+/* Cancel button */
+.dp-modal button:last-of-type {
+  background-color: #f1f1f1;
+}
+
+.dp-modal button:last-of-type:hover {
+  background-color: #ddd;
 }
 
 /* Modal Box */
@@ -1257,6 +1327,75 @@ background-color: #b66c0af5;
     opacity: 1;
     transform: translateY(0);
   }
+}
+
+
+/* Overlay background */
+.eqp-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* semi transparent background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+.eqp-modal
+/* Modal box */
+.eqp-modal {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Input styling */
+.eqp-modal input {
+  padding: 8px 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+  outline: none;
+}
+
+.eqp-modal input:focus {
+  border-color: #4a90e2;
+}
+
+/* Buttons */
+.eqp-modal button {
+  padding: 8px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: 0.2s ease;
+}
+
+/* Done button */
+.eqp-modal button:first-of-type {
+  background-color: #4a90e2;
+  color: white;
+}
+
+.eqp-modal button:first-of-type:hover {
+  background-color: #357abd;
+}
+
+/* Cancel button */
+.eqp-modal button:last-of-type {
+  background-color: #f1f1f1;
+}
+
+.eqp-modal button:last-of-type:hover {
+  background-color: #ddd;
 }
 
 

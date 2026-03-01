@@ -134,7 +134,10 @@ function Customerdetails() {
 
         <div className="customer-item">
           <p>📅 Date: {customer.date}</p>
-          <span onClick={() => setdatepop(true)} className="edit-emoji">➕</span>
+          <span onClick={() => {
+            setdatepop(true)
+            setDateedit(customer.date)
+          }} className="edit-emoji">➕</span>
         </div>
 
       </div>
@@ -143,6 +146,7 @@ function Customerdetails() {
       {editquantitypop && (
         <div className="eqp-overlay">
           <div className="eqp-modal">
+            <h3 style={{textAlign:"center"}}>Edit mawa quantity {customer.quantity} kg</h3>
             <input
               type="number"
               value={quantityinput}
@@ -158,6 +162,7 @@ function Customerdetails() {
       {pricepop && (
         <div className="dp-overlay">
           <div className="dp-modal">
+            <h3 style={{textAlign:"center"}}>Edit mawa price {customer.price}₹</h3>
             <input
               type="number"
               value={priceinput}
@@ -173,6 +178,8 @@ function Customerdetails() {
       {datepop && (
         <div className="dp-overlay">
           <div className="dp-modal">
+            <h3 style={{textAlign:"center"}}>Edit mawa date {customer.date}</h3>
+            
             <input
               type="date"
               value={dateedit}
